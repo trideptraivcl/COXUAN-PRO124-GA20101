@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 1f;
     
 
-    private PlayerControllers playerControllers;
+    private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
     private Animator myAnimator;
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        playerControllers = new PlayerControllers();
+        playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        playerControllers.Enable();
+        playerControls.Enable();
     }
 
     private void Update()
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerInput()
     {
-        movement = playerControllers.Movement.Move.ReadValue<Vector2>();
+        movement = playerControls.Movement.Move.ReadValue<Vector2>();
 
         myAnimator.SetFloat("moveX", movement.x);
         myAnimator.SetFloat("moveY", movement.y);

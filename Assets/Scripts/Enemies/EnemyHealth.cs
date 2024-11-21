@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int startingHealth = 3;
+    [SerializeField] private int startingHealth = 20;
 
     private int currentHealth;
     private KnockBack knockBack;

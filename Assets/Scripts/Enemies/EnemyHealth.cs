@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int startingHealth = 20;
+    [SerializeField] private int startingHealth = 3;
+    [SerializeField] private GameObject deatVFXPrefab;
 
     private int currentHealth;
     private KnockBack knockBack;
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            Instantiate(deatVFXPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Staff
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 6972463044463173574, guid: 9da100c096a795843bcc6aa39d6016ea, type: 3}
-  weaponCooldown: 0.6
+  weaponCooldown: 0.7

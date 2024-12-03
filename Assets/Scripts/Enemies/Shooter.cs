@@ -1,16 +1,45 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class Shooter : MonoBehaviour, IEnemy
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float bullerMoveSpeed;
+    [SerializeField] private int burstCount;
+    [SerializeField] private float timeBetweenBursts;
+    [SerializeField] private float restTime = 1f;
+
+    private bool isShooting = false;
+
+    public void Attack()
     {
-        
+        if (!isShooting)
+        {
+            StartCoroutine(ShootRoutine());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator ShootRoutine()
     {
-        
+        isShooting = true;
+
+        for (int i = 0; i < burstCount; i++)
+        {
+            Vector2 targetDirection = PlayerController.Instance.transform.position - transform.position;
+
+            GameObject newBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            newBullet.transform.right = targetDirection;
+
+            if (newBullet.TryGetComponent(out Projectile projectile))
+            {
+                projectile.UpdateMoveSpeed(bullerMoveSpeed);
+            }
+            yield return new WaitForSeconds(timeBetweenBursts);
+        }
+        yield return new WaitForSeconds(restTime);
+        isShooting = false;
     }
+
+
 }

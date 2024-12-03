@@ -268,10 +268,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 0}
-  bullerMoveSpeed: 0
-  burstCount: 0
-  timeBetweenBursts: 0
+  bulletMoveSpeed: 0.1
+  burstCount: 1
+  projectilesPerBurst: 1
+  angleSpread: 0
+  startingDistance: 0.1
+  timeBetweenBursts: 0.1
   restTime: 1
+  stagger: 0
+  oscillate: 0
 --- !u!210 &926862390084359595
 SortingGroup:
   m_ObjectHideFlags: 0

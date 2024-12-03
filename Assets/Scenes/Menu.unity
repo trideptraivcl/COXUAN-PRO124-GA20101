@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c703452bafca524dbcdb43ef52ba7b7, type: 2}
   m_sharedMaterial: {fileID: -3652219218394385972, guid: 0c703452bafca524dbcdb43ef52ba7b7, type: 2}
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: CONTROLS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c703452bafca524dbcdb43ef52ba7b7, type: 2}
   m_sharedMaterial: {fileID: -3652219218394385972, guid: 0c703452bafca524dbcdb43ef52ba7b7, type: 2}
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 1281644194}
   - component: {fileID: 1281644193}
   m_Layer: 5
-  m_Name: options
+  m_Name: controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15,8 +15,12 @@ MonoBehaviour:
   weaponPrefab: {fileID: 6833752993906347417, guid: 3c6dbc07c9ad0814dbfc628759c6bd9b, type: 3}
   weaponCooldown: 0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
   weaponDamage: 10
 =======
   weaponDamage: 1000
+>>>>>>> Test-nhe
+=======
+  weaponDamage: 10
 >>>>>>> Test-nhe
   weaponRange: 12

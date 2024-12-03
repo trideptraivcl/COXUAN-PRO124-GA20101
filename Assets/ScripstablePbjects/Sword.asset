@@ -19,6 +19,6 @@ MonoBehaviour:
   weaponRange: 0
 =======
   weaponCooldown: 0.1
-  weaponDamage: 1000
+  weaponDamage: 10
   weaponRange: 20
 >>>>>>> Test-nhe

@@ -35,7 +35,7 @@ public class BossAttack : MonoBehaviour
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
-            playerHealth.TakeDamage(damage);
+            playerHealth.TakeDamage(1, transform);
         }
 
         // Gọi hoạt ảnh tấn công (nếu có Animator)

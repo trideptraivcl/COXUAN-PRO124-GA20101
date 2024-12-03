@@ -261,8 +261,10 @@ GameObject:
   - component: {fileID: 4994184439987747744}
   - component: {fileID: 6127640636288236273}
   - component: {fileID: 6884838066245330516}
-  - component: {fileID: 8157338309980365276}
   - component: {fileID: 3947364029661649761}
+  - component: {fileID: 2077429932532220229}
+  - component: {fileID: 7786023570494231963}
+  - component: {fileID: 6075623320316957214}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -458,20 +460,6 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
---- !u!114 &8157338309980365276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078474917131363646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebc2874754b2d6246a7f74763165a292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  gameOverUI: {fileID: 0}
 --- !u!114 &3947364029661649761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +473,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cong: {fileID: 0}
+--- !u!114 &2077429932532220229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078474917131363646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ae86fd9df2d5a4b8e536035273666e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: d108b70d2e20da84e84775fbe0d82bb0, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &7786023570494231963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078474917131363646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3a042b753b41847961a0ae6b2119fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &6075623320316957214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078474917131363646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6072bcc5a58507a468a889c9655a3b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  knockBackThrustAmount: 10
+  damageRecoveryTime: 1
 --- !u!1 &6137605917535527343
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52525eff9f552214b9dcfeeb37271a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
 --- !u!1 &9163332848291616406
 GameObject:
   m_ObjectHideFlags: 0

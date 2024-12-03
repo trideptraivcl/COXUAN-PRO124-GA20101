@@ -6,7 +6,7 @@ public class Menu : MonoBehaviour
 {
   public void PlayGame()
     {
-        SceneManager.LoadScene("map3");
+        SceneManager.LoadScene("map1");
     }
     public void QuitGame()
     {

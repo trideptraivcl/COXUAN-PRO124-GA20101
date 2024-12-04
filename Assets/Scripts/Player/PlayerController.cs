@@ -34,6 +34,7 @@ public class PlayerController : Singleton<PlayerController>
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
         knockBack = GetComponent<KnockBack>();
+
     }
 
     private void Start()
@@ -116,4 +117,5 @@ public class PlayerController : Singleton<PlayerController>
         yield return new WaitForSeconds(dashCD);
         isDashing = false;
     }
+
 }

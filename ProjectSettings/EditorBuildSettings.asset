@@ -10,10 +10,10 @@ EditorBuildSettings:
     guid: 0623fc4313f2dbe4ebd655fc96849a0e
   - enabled: 1
     path: Assets/Scenes/map1.unity
-    guid: de721fa258b937143b522084c36606f5
+    guid: 8e2f819da9ea9e54c87f48c9270f2689
   - enabled: 1
     path: Assets/Scenes/map2.unity
-    guid: 140e9301fca849949aa9a1f86ce69789
+    guid: a6cf87ac7f4ac414cb6f39a35246c778
   - enabled: 1
     path: Assets/Scenes/map3.unity
     guid: eabb625124423f94ea01aebe4a221572

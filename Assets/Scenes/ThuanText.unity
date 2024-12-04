@@ -802,16 +802,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705805364257970921, guid: 5110229008d4b464f8790fd755243e4e, type: 3}
+      propertyPath: stagger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705805364257970921, guid: 5110229008d4b464f8790fd755243e4e, type: 3}
       propertyPath: restTime
-      value: 0.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7705805364257970921, guid: 5110229008d4b464f8790fd755243e4e, type: 3}
-      propertyPath: burstCount
-      value: 5
+      propertyPath: oscillate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7705805364257970921, guid: 5110229008d4b464f8790fd755243e4e, type: 3}
-      propertyPath: bullerMoveSpeed
-      value: 6
+      propertyPath: startingDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705805364257970921, guid: 5110229008d4b464f8790fd755243e4e, type: 3}
+      propertyPath: timeBetweenBursts
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

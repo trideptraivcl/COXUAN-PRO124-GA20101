@@ -11,7 +11,7 @@ public class LoadNextLevel : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            collision.gameObject.SetActive(false); // Vô hiệu hóa đối tượng Player
+            Debug.Log("Player triggered the level change!");
             ModeSelect(); // Gọi hàm chuyển scene
         }
     }
@@ -23,9 +23,18 @@ public class LoadNextLevel : MonoBehaviour
 
     IEnumerator LoadAfterDelay()
     {
-        yield return new WaitForSeconds(delaySecond); // Chờ trong khoảng thời gian chỉ định
-        SceneManager.LoadScene(nameScene); // Chuyển đến scene mới
-        Destroy(gameObject);
+        Debug.Log($"Loading scene: {nameScene} after {delaySecond} seconds...");
 
+        yield return new WaitForSeconds(delaySecond); // Chờ trong khoảng thời gian chỉ định
+
+        // Kiểm tra nếu Camera chính có tồn tại
+        if (Camera.main == null)
+        {
+            Debug.LogWarning("No Main Camera in the current scene! Please add a Camera to the scene.");
+        }
+
+        // Chuyển scene
+        SceneManager.LoadScene(nameScene);
+        Debug.Log($"Scene {nameScene} loaded successfully!");
     }
 }

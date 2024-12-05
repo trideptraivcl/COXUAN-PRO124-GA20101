@@ -4860,8 +4860,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4163235808366381528, guid: e6e3a0cad93fa094589b45aa24c09020, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 891466282}
   m_SourcePrefab: {fileID: 100100000, guid: e6e3a0cad93fa094589b45aa24c09020, type: 3}
+--- !u!1 &891466281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4163235808366381528, guid: e6e3a0cad93fa094589b45aa24c09020, type: 3}
+  m_PrefabInstance: {fileID: 891466280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &891466282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891466281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0444ac8c7a6023449ad0b7a71ddbb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delaySecond: 4
+  nameScene: map3
 --- !u!1001 &898971103
 PrefabInstance:
   m_ObjectHideFlags: 0

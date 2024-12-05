@@ -56,30 +56,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
+      propertyPath: goldCoin
+      value: 
+      objectReference: {fileID: 1769591553302988400, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
+    - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
+      propertyPath: healthGlobe
+      value: 
+      objectReference: {fileID: 1769591553302988400, guid: 20db18c9394b1bf4ebb1b7b20bc950b8, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 710837351685964371, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5509280182599982014}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
---- !u!1 &6129732658133451582 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 710837351685964371, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
-  m_PrefabInstance: {fileID: 6686800558821835117}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5509280182599982014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6129732658133451582}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91916b713a4f1754cbebae1d76287eaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goinCoinPrefab: {fileID: 0}

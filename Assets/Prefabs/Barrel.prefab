@@ -25,6 +25,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4906608091998128875, guid: 9277e69fda9437f4e96e77bb61931c36, type: 3}
     - target: {fileID: 4772065679129740596, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
+      propertyPath: healthGlobe
+      value: 
+      objectReference: {fileID: 1769591553302988400, guid: 20db18c9394b1bf4ebb1b7b20bc950b8, type: 3}
+    - target: {fileID: 4772065679129740596, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
       propertyPath: goinCoinPrefab
       value: 
       objectReference: {fileID: 1769591553302988400, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
@@ -70,29 +74,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 2597830530782164070, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4108796127591879236, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5784027233705372852}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
---- !u!1 &710837351685964371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4108796127591879236, guid: 8b291ee787859594880e4f70d5f77a96, type: 3}
-  m_PrefabInstance: {fileID: 3519570260578471959}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5784027233705372852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710837351685964371}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91916b713a4f1754cbebae1d76287eaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goinCoinPrefab: {fileID: 0}

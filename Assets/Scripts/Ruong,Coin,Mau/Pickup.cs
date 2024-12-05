@@ -7,7 +7,6 @@ public class Pickup : MonoBehaviour
     private enum PickUpType
     {
         GoldCoin,
-        StaminaGlobe,
         HealthGlobe,
     }
 
@@ -95,10 +94,6 @@ public class Pickup : MonoBehaviour
             case PickUpType.HealthGlobe:
                 PlayerHealth.Instance.HealPlayer();
                 Debug.Log("HealthGlobe");
-                break;
-            case PickUpType.StaminaGlobe:
-                // do stamina globe stuff
-                Debug.Log("StaminaGlobe");
                 break;
         }
     }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2218321620966597456}
   - component: {fileID: -7789975296521279992}
   m_Layer: 0
-  m_Name: Gold Coin
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 205855355, guid: cb72e768b48297d478695f82b2c7a327, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7da473d42b2d4b14a87da5a919764eca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769591553302988400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4c641f779f20c9349960169bbdabc83e, type: 2}
   m_CullingMode: 0
@@ -189,6 +189,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc8578e3445da34a9160ebd0016c690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpType: 1
   pickUpDistance: 5
   accelartionRate: 0.5
   moveSpeed: 30
+  animCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heightY: 1.5
+  popDuration: 1

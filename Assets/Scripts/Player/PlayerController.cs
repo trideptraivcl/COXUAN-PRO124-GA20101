@@ -1,17 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
-using System.Collections.Generic;
 
 public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } }
-    
 
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 5f;
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private int attackDamage = 1; // Sát th??ng t?n công
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -28,7 +27,6 @@ public class PlayerController : Singleton<PlayerController>
     {
         base.Awake();
 
-
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -39,6 +37,7 @@ public class PlayerController : Singleton<PlayerController>
     private void Start()
     {
         playerControls.Combat.Dash.performed += _ => Dash();
+        playerControls.Combat.Attack.performed += _ => Attack(); // L?ng nghe phím t?n công
 
         startingMoveSpeed = moveSpeed;
     }
@@ -115,5 +114,36 @@ public class PlayerController : Singleton<PlayerController>
         myTrailRenderer.emitting = false;
         yield return new WaitForSeconds(dashCD);
         isDashing = false;
+    }
+
+    private void Attack()
+    {
+        Debug.Log("Player attacks!");
+
+        // Kiểm tra va chạm trong tầm đánh
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(weaponCollider.position, 1f);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            BossController boss = enemy.GetComponent<BossController>();
+            if (boss != null)
+            {
+                boss.TakeDamage(attackDamage); // Gây sát thương lên Boss
+            }
+        }
+
+        // Hoạt ảnh tấn công
+        if (myAnimator != null)
+        {
+            myAnimator.SetTrigger("Attack");
+        }
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+        // Hi?n th? t?m t?n công khi ch?n Player trong Editor
+        if (weaponCollider == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(weaponCollider.position, 1f);
     }
 }

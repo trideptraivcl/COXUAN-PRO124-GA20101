@@ -77,9 +77,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
+      propertyPath: goldCoin
+      value: 
+      objectReference: {fileID: 1769591553302988400, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
+    - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8278125131118908707, guid: 63967eba14e9ca34d8ed68576bdda051, type: 3}
+      propertyPath: healthGlobe
+      value: 
+      objectReference: {fileID: 1769591553302988400, guid: 20db18c9394b1bf4ebb1b7b20bc950b8, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}

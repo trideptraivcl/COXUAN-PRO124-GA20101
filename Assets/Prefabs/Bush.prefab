@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: edceaac3f5f13bf439b4d8ac96f319e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -152,4 +152,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91916b713a4f1754cbebae1d76287eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goinCoinPrefab: {fileID: 1769591553302988400, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
+  goldCoin: {fileID: 1769591553302988400, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
+  healthGlobe: {fileID: 1769591553302988400, guid: 20db18c9394b1bf4ebb1b7b20bc950b8, type: 3}

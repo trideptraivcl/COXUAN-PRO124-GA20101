@@ -8,29 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zombie.unity
     guid: 0623fc4313f2dbe4ebd655fc96849a0e
-  - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Scenes/Legacy-Dungeon_V0.2_vacaroxa/map1.unity
-    guid: ad3674dea87b4cc47ab48ba8e530f879
-  - enabled: 1
-    path: Assets/Scenes/Legacy-Dungeon_V0.2_vacaroxa/map2.unity
-    guid: 8ebafa32cabd8764781d46374a640512
-  - enabled: 1
-    path: Assets/Scenes/Legacy-Dungeon_V0.2_vacaroxa/map3.unity
-    guid: 46d8a7f3ef833ca4ba46c4d756f4d7bd
-  - enabled: 1
-    path: Assets/Scenes/Legacy-Dungeon_V0.2_vacaroxa/ThatBai.unity
-    guid: 529aad2a66505034c86469cd1dd89546
-=======
-    path: Assets/Scenes/tumlum/Scene1.unity
-    guid: ad3674dea87b4cc47ab48ba8e530f879
-  - enabled: 1
-    path: Assets/Scenes/tumlum/Scene2.unity
-    guid: a6cf87ac7f4ac414cb6f39a35246c778
-  - enabled: 1
-    path: Assets/Scenes/tumlum/Scene3.unity
-    guid: 46d8a7f3ef833ca4ba46c4d756f4d7bd
->>>>>>> Stashed changes
+  - enabled: 0
+    path: Assets/Scenes/map1.unity
+    guid: de721fa258b937143b522084c36606f5
+  - enabled: 0
+    path: Assets/Scenes/map2.unity
+    guid: 140e9301fca849949aa9a1f86ce69789
+  - enabled: 0
+    path: Assets/Scenes/map3.unity
+    guid: 214b5ede73ac2554c8a320580fbee986
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

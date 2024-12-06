@@ -39616,6 +39616,7 @@ Transform:
   m_PrefabInstance: {fileID: 1978498817}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1992815680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4928375010995783978, guid: adb86cee42e2fb342852c6a1b9409372, type: 3}
@@ -39695,6 +39696,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5765551513375702768, guid: 86dd9065e7af5a84686591d8c8ab7612, type: 3}
   m_PrefabInstance: {fileID: 2011541140}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> thuanaaaaa
 =======
 >>>>>>> thuanaaaaa
 --- !u!1001 &2017180725
@@ -95061,7 +95064,12 @@ SceneRoots:
   - {fileID: 7474527579034052992}
   - {fileID: 1686965641}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 5930162389145017221}
+=======
+  - {fileID: 1419165044}
+  - {fileID: 1914569375}
+>>>>>>> thuanaaaaa
 =======
   - {fileID: 1419165044}
   - {fileID: 1914569375}

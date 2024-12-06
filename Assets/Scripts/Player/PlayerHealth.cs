@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Import SceneManager để chuyển Scene
 using UnityEngine.UI;
 
 public class PlayerHealth : Singleton<PlayerHealth>
@@ -54,7 +55,6 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         if (!canTakeDamage) { return; }
 
-        
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
@@ -70,6 +70,9 @@ public class PlayerHealth : Singleton<PlayerHealth>
         {
             currentHealth = 0;
             Debug.Log("Player Death");
+
+            // Chuyển sang Scene "GameOver" khi Player chết
+            SceneManager.LoadScene("ThatBai");
         }
     }
 

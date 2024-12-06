@@ -31319,6 +31319,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2844271264804132474, guid: e6e3a0cad93fa094589b45aa24c09020, type: 3}
   m_PrefabInstance: {fileID: 891466280}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< Updated upstream:Assets/Scenes/Legacy-Dungeon_V0.2_vacaroxa/Pause.unity
+========
+--- !u!114 &891466282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891466281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0444ac8c7a6023449ad0b7a71ddbb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delaySecond: 2
+  nextScene: Scene3
+  loadingScreen: {fileID: 1896986178}
+  videoPlayer: {fileID: 0}
+>>>>>>>> Stashed changes:Assets/Scenes/tumlum/Scene2.unity
 --- !u!1001 &898971103
 PrefabInstance:
   m_ObjectHideFlags: 0

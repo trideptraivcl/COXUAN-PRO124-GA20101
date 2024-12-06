@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Scenes/222.unity.meta
 guid: a129c22d4d1d62e41a1faeabdd125466
+========
+guid: 36a8a2f3b8fd7214e847136a0a78b0c7
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/Scenes/tumlum.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

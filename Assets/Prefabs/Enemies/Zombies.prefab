@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 7071846551638267728}
   - component: {fileID: 1780275791818265697}
   - component: {fileID: 5406465744213809848}
+  - component: {fileID: -8329094363039907198}
   m_Layer: 0
   m_Name: Zombies
   m_TagString: Untagged
@@ -239,6 +240,7 @@ MonoBehaviour:
   startingHealth: 3
   deatVFXPrefab: {fileID: 658810306976041841, guid: 3c613dbbb17fea64bb421a087842728c, type: 3}
   knockBackThrust: 15
+  currentHealth: 0
 --- !u!114 &3887266492715052470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,3 +379,17 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &-8329094363039907198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827141856539306070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028dd8b40b9d4ee449590edc9c4ee8de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: 0
+  text: {fileID: 0}
